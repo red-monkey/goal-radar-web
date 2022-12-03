@@ -1,5 +1,5 @@
-# goalradar
-The Goal Radar Website
+# GoalRadar
+The Goal Radar Website: www.goalradar.com.tr
 
 Directory Structure
 -------------------
