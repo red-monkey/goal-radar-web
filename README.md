@@ -12,17 +12,17 @@ index.html        - Main HTML page to open the template in browser.
 *.html            - Additional HTML pages (if any).
 LICENSE-*.txt     - License file as per your downloaded variant.
 
-How to Edit the template
+How to Edit the website
 ------------------------
 
-1. Editing Content in template
+1. Editing Content in website
 
 To edit the content open the corresponding *.html files and open them
 in an editor such as VSCode or Notepad++.
 Search for the content you want to change and edit it to the text you want.
 Save the file and reopen HTML file in browser to see the changes.
 
-2. Editing Styles of template
+2. Editing Styles of website
 
 The main style is present in css\main.css which you can edit.
 You must know how to edit CSS files to do this.
@@ -37,11 +37,10 @@ Make sure to name the file same as the original file.
 If you wish to change the name of the image file then you must
 also make corresponding change in the HTML file which refer to that image.
 
-How to use the template
+How to use the website
 -----------------------
-Upload the contents to your webserver.
+Upload the contents to the webserver.
 index.html must be in the main (root) folder of your webserver.
 Do not change the name of the template folders or files unless you know
 what you are doing and are changing the names in HTML files too.
-For webhosting, you can go with https://templateflip.com/go/hosting for easy FTP file uploads.
 
