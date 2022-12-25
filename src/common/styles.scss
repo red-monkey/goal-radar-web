@@ -539,6 +539,12 @@ $green: #005C00;
                 margin-left: 0.3vw;
                 margin-right: 0.3vw;
                 margin-bottom: 0.3vw;
+
+                .carousel{
+                    .carousel-inner{
+                        height: 100%!important;
+                    }
+                }
             }
             .news-body-column{
                 .row2-1-item{

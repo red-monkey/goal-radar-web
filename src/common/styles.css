@@ -516,6 +516,9 @@
   margin-right: 0.3vw;
   margin-bottom: 0.3vw;
 }
+.news-container .news-body .news-body-row2 .row2-item .carousel .carousel-inner {
+  height: 100% !important;
+}
 .news-container .news-body .news-body-row2 .news-body-column .row2-1-item {
   display: flex;
   justify-content: center;

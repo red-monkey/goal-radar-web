@@ -35,24 +35,24 @@ function News() {
           </div>
           <div className="news-body-row2">
             <div className="row2-item">
-              <Carousel>
-                <Carousel.Item>
+              <Carousel className="h-100">
+                <Carousel.Item className="h-100">
                   <img
-                    className="d-block w-100"
+                    className="d-block w-100 h-100"
                     src={image}
                     alt="First slide"
                   />
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="h-100">
                   <img
-                    className="d-block w-100"
+                    className="d-block w-100 h-100"
                     src={image}
                     alt="Second slide"
                   />
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="h-100">
                   <img
-                    className="d-block w-100"
+                    className="d-block w-100 h-100"
                     src={image}
                     alt="Third slide"
                   />

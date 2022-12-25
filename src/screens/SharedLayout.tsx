@@ -13,21 +13,21 @@ function SharedLayout() {
         <div className="downloadnow">
           <img src={downloadnow} width={"100%"} height={"100%"} alt="" />
           <a
-            href="https://www.google.com/"
+            href="#"
             className="appstorelink"
             role="link"
             target="_blank"
             rel="noreferrer"
           ></a>
           <a
-            href="https://www.google.com/"
+            href="#"
             className="googleplaylink"
             role="link"
             target="_blank"
             rel="noreferrer"
           ></a>
           <a
-            href="https://www.google.com/"
+            href="#"
             className="downloadnowlink"
             role="link"
             target="_blank"
