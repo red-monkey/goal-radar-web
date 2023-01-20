@@ -13,17 +13,15 @@ const Contact=()=> {
     );
   };
   
-  const submitHandler = (e:any) => {
+  const submitHandler = async (e:any) => {
     e.preventDefault()
     console.log(name,email,message)
-    contactUsHandler("goalradardev@gmail.com", name + "-" + email, message)
+    await contactUsHandler("goalradardev@gmail.com", name + "-" + email, message)
     alert("Mesaj basari ile gonderildi!")
     setName('')
     setEmail('')
     setMessage('')
   }
-
-  useEffect(()=>{},[submitHandler])
 
   return (
 
