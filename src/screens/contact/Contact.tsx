@@ -1,30 +1,37 @@
-import React,{useState,useEffect} from "react";
-import axios from 'axios'
+import { useState } from "react";
+import axios from "axios";
 import logo from "../../components/images/GoalRadarLogo.png";
+import { appConfig } from "../../config";
 
-const Contact=()=> {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  
-  const contactUsHandler=async(to:string,subject:string,text:string)=> { 
+const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const contactUsHandler = async (
+    to: string,
+    subject: string,
+    text: string
+  ) => {
     await axios.get(
-      `http://goalradar.com.tr:3000/v1/email/send?to=${to}&subject=${subject}&text=${text}`,
+      `${appConfig.API_URL}/email/send?to=${to}&subject=${subject}&text=${text}`
     );
   };
-  
-  const submitHandler = async (e:any) => {
-    e.preventDefault()
-    console.log(name,email,message)
-    await contactUsHandler("goalradardev@gmail.com", name + "-" + email, message)
-    alert("Mesaj basari ile gonderildi!")
-    setName('')
-    setEmail('')
-    setMessage('')
-  }
+
+  const submitHandler = async (e: any) => {
+    e.preventDefault();
+    await contactUsHandler(
+      "goalradardev@gmail.com",
+      name + "-" + email,
+      message
+    );
+    alert("Mesaj basari ile gonderildi!");
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
   return (
-
     <div className="contact-container">
       <div className="contact-title">GOAL RADAR’A ULAŞIN</div>
       <div className="contact-logo-container">
@@ -71,6 +78,6 @@ const Contact=()=> {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;
