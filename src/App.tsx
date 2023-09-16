@@ -6,6 +6,7 @@ import Contact from "./screens/contact/Contact";
 import Home from "./screens/home/Home";
 import MobileApp from "./screens/mobileApp/MobileApp";
 import News from "./screens/news/News";
+import PrivacyPolicy from "./screens/privacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="mobileapp" element={<MobileApp />} />
           <Route path="news" element={<News />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </BrowserRouter>
