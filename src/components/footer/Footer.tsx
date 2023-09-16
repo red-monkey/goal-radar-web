@@ -6,6 +6,7 @@ import {
   BsYoutube,
   BsTelegram,
 } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -61,6 +62,12 @@ function Footer() {
           hatalardan, maddi/manevi zararlardan goalradar.com.tr sorumlu
           tutulamaz.
         </div>
+        <div className="footer-info-text">
+          <Link to="/privacy-policy">
+            <p>KVVK Ayndınlatma Metni</p>
+          </Link>
+        </div>
+        <hr />
         <hr />
         <div className="footer-info-copyright">
           2022 GOALRADAR Tüm Hakları Saklıdır. All Right Reserved to
