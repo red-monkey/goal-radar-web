@@ -1,31 +1,50 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import axios from "axios";
 import logo from "../../components/images/GoalRadarLogo.png";
 import { appConfig } from "../../config";
+
+const SUPPORT_EMAIL = "goalradardev@gmail.com";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const contactUsHandler = async (
-    to: string,
-    subject: string,
-    text: string
-  ) => {
-    await axios.get(
-      `${appConfig.API_URL}/email/send?to=${to}&subject=${subject}&text=${text}`
-    );
+  const contactUsHandler = async (to: string, subject: string, text: string) => {
+    if (!appConfig.API_URL) {
+      throw new Error("API URL is not configured");
+    }
+
+    const params = new URLSearchParams({
+      to,
+      subject,
+      text,
+    });
+
+    await axios.get(`${appConfig.API_URL}/email/send?${params.toString()}`);
   };
 
-  const submitHandler = async (e: any) => {
+  const openMailClient = (subject: string, text: string) => {
+    const mailtoUrl = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(text)}`;
+
+    window.location.href = mailtoUrl;
+  };
+
+  const submitHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await contactUsHandler(
-      "goalradardev@gmail.com",
-      name + "-" + email,
-      message
-    );
-    alert("Mesaj basari ile gonderildi!");
+
+    const subject = `${name} - ${email}`;
+
+    try {
+      await contactUsHandler(SUPPORT_EMAIL, subject, message);
+      alert("Mesaj basari ile gonderildi!");
+    } catch (error) {
+      alert("Mesaj servisine ulasilamadi. E-posta uygulamaniz aciliyor.");
+      openMailClient(subject, message);
+    }
+
     setName("");
     setEmail("");
     setMessage("");
