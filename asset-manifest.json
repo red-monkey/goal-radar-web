@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/goal-radar-web/static/css/main.b2094da2.css",
+    "main.js": "/goal-radar-web/static/js/main.8091c84f.js",
+    "static/media/Football.jpg": "/goal-radar-web/static/media/Football.57219ff19083e582bed5.jpg",
+    "static/media/background.png": "/goal-radar-web/static/media/background.f35b5d53c540d3970321.png",
+    "static/media/appinfo.png": "/goal-radar-web/static/media/appinfo.07e2d55ae605e6b20ee4.png",
+    "static/media/mobileapp.png": "/goal-radar-web/static/media/mobileapp.9e386a12a882b1072256.png",
+    "static/media/card4.png": "/goal-radar-web/static/media/card4.b6b4a4853232b44455c9.png",
+    "static/media/card6.png": "/goal-radar-web/static/media/card6.85a7d3f6c5141139c9c8.png",
+    "static/media/card1.png": "/goal-radar-web/static/media/card1.0231589733780d99696d.png",
+    "static/media/card2.png": "/goal-radar-web/static/media/card2.886c51e3f89971dab69b.png",
+    "static/media/card3.png": "/goal-radar-web/static/media/card3.4472e8e15f6299f01641.png",
+    "static/media/downloadnow.png": "/goal-radar-web/static/media/downloadnow.f952d3948c703aa3ea0b.png",
+    "static/media/GoalRadarLogo.png": "/goal-radar-web/static/media/GoalRadarLogo.97987bd3819019cdd0a8.png",
+    "static/media/card5.png": "/goal-radar-web/static/media/card5.8059864877a05f8ae87e.png",
+    "static/media/umitkaran.png": "/goal-radar-web/static/media/umitkaran.3ca2782789cca9d6e72a.png",
+    "static/media/ahmetercanlar.png": "/goal-radar-web/static/media/ahmetercanlar.66c69239860d75ab2f9f.png",
+    "static/media/ahmetercanlar2.png": "/goal-radar-web/static/media/ahmetercanlar2.df27caf3d03e93f6d000.png",
+    "static/media/cantongo.png": "/goal-radar-web/static/media/cantongo.b56fe159cdd62666f6cb.png",
+    "static/media/pascalnouma.png": "/goal-radar-web/static/media/pascalnouma.1a9a1b9f0144bf73b92d.png",
+    "index.html": "/goal-radar-web/index.html",
+    "main.b2094da2.css.map": "/goal-radar-web/static/css/main.b2094da2.css.map",
+    "main.8091c84f.js.map": "/goal-radar-web/static/js/main.8091c84f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2094da2.css",
+    "static/js/main.8091c84f.js"
+  ]
+}
