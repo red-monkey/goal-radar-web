@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/goal-radar-web/static/css/main.b2094da2.css",
-    "main.js": "/goal-radar-web/static/js/main.8091c84f.js",
+    "main.css": "/goal-radar-web/static/css/main.b17ae653.css",
+    "main.js": "/goal-radar-web/static/js/main.7888f08d.js",
     "static/media/Football.jpg": "/goal-radar-web/static/media/Football.57219ff19083e582bed5.jpg",
     "static/media/background.png": "/goal-radar-web/static/media/background.f35b5d53c540d3970321.png",
     "static/media/appinfo.png": "/goal-radar-web/static/media/appinfo.07e2d55ae605e6b20ee4.png",
@@ -20,11 +20,11 @@
     "static/media/cantongo.png": "/goal-radar-web/static/media/cantongo.b56fe159cdd62666f6cb.png",
     "static/media/pascalnouma.png": "/goal-radar-web/static/media/pascalnouma.1a9a1b9f0144bf73b92d.png",
     "index.html": "/goal-radar-web/index.html",
-    "main.b2094da2.css.map": "/goal-radar-web/static/css/main.b2094da2.css.map",
-    "main.8091c84f.js.map": "/goal-radar-web/static/js/main.8091c84f.js.map"
+    "main.b17ae653.css.map": "/goal-radar-web/static/css/main.b17ae653.css.map",
+    "main.7888f08d.js.map": "/goal-radar-web/static/js/main.7888f08d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2094da2.css",
-    "static/js/main.8091c84f.js"
+    "static/css/main.b17ae653.css",
+    "static/js/main.7888f08d.js"
   ]
 }
